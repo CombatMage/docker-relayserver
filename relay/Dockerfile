@@ -2,7 +2,7 @@
 FROM hypriot/rpi-node:0.12.0
 
 # make the src folder available in the docker image
-ADD node-relayserver /node-relayserver
+ADD node-relayserver/ /node-relayserver
 WORKDIR /node-relayserver
 
 # install the dependencies from the package.json file
