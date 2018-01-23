@@ -1,5 +1,5 @@
 # use our prepared Raspberry Pi compatible Docker base image with Node.js
-FROM hypriot/rpi-node:0.12.0
+FROM node
 
 # make the src folder available in the docker image
 ADD node-relayserver/ /node-relayserver
@@ -13,5 +13,4 @@ RUN npm install
 EXPOSE 8081
 EXPOSE 8082
 
-# start node with the index.js file of our hello-world application
 CMD ["npm", "start"]
