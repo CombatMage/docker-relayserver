@@ -1,8 +1,13 @@
 version: "3"
+
 services:
   web:
     build: ./web
     ports:
-      - "901:80"
+      - "903:80"
 
-
+  relay:
+    build: ./relay
+    ports:
+      - "901:8081"
+      - "902:8082"
