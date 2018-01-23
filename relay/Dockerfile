@@ -2,7 +2,7 @@
 FROM node
 
 # make the src folder available in the docker image
-ADD node-relayserver/ /node-relayserver
+COPY node-relayserver/ /node-relayserver
 WORKDIR /node-relayserver
 
 # install the dependencies from the package.json file
