@@ -4,10 +4,10 @@ services:
   web:
     build: ./web
     ports:
-      - "${PORT_WEB_HOST}:80"
+      - "903:80" # port web server
 
   relay:
     build: ./relay
     ports:
-      - "${PORT_RELAY_STREAM_HOST}:8081"
-      - "${PORT_RELAY_WS_HOST}:8082"
+      - "901:8081" # port for video stream to relay
+      - "902:8082" # port for websocket connections
